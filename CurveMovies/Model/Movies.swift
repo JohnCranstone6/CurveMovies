@@ -28,25 +28,20 @@ struct Movie: Decodable {
 
 func pullMovies(page:Int){
     
-    let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=9b35991200df7847ea388645c6a30663&page="+String(page))! //Variable needed in Page for continuous scroll
+    let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=9b35991200df7847ea388645c6a30663&page="+String(page))!
+    
     
     let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
         guard let data = data else { return }
-        //print(String(data: data, encoding: .utf8)!)
-        do{
+
+        do{ //JSON decode parses through URL return date
             let descr = try JSONDecoder().decode(description.self, from: data)
-            /*print(descr.page)
-            print(descr.total_pages)
-            print(descr.total_results)
-            */
+          
+      
             for i in (0..<descr.results.count){
                 
-             /*   print(descr.results[i].title)
-                print(descr.results[i].overview)
-                print(descr.results[i].vote_average)
-                print(descr.results[i].poster_path)
-                print(descr.results[i].release_date)
-             */
+                //append string arrays with parsed data.
+                
                 movieName.append(descr.results[i].title)
                 movieDesc.append(descr.results[i].overview)
                 movieRating.append(descr.results[i].vote_average)

@@ -43,7 +43,7 @@ class MovieListController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let count = indexPath.row
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell") as! MovieCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell") as! MovieCellView
      
         cell.setCell(count:count)
         
@@ -55,11 +55,12 @@ class MovieListController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let bottom = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
-        
+        //  if user reaches the bottom of the list
         if(bottom > contentHeight - scrollView.frame.height){
+            // add 1 to page number in Movies.swift query URL
             pageNum = pageNum + 1
             pullMovies(page: +pageNum)
-            self.tableView.reloadData()
+            self.tableView.reloadData() 
         }
         
     }
