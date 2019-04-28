@@ -20,8 +20,8 @@
 /* Begin PBXFileReference section */
 		5281446E227249F800F102C6 /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieCellView.swift; path = ../../CurveMovies/View/MovieCellView.swift; sourceTree = "<group>"; };
 		5281446F227249F800F102C6 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Movies.swift; path = ../Model/Movies.swift; sourceTree = "<group>"; };
-		5281447222724A0000F102C6 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieController.swift; path = ../CurveMovies/Controller/MovieController.swift; sourceTree = "<group>"; };
-		5281447322724A0000F102C6 /* MovieListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieListController.swift; path = ../CurveMovies/Controller/MovieListController.swift; sourceTree = "<group>"; };
+		5281447222724A0000F102C6 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		5281447322724A0000F102C6 /* MovieListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListController.swift; sourceTree = "<group>"; };
 		528E72782271D13A0067E4BD /* CurveMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurveMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528E727B2271D13A0067E4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528E72802271D13A0067E4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
